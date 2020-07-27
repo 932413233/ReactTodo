@@ -1,68 +1,61 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Just a sample app I'm working on with React [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+To upload with GIT.
 
-In the project directory, you can run:
+git init
+This command turns a directory into an empty Git repository. This is the first step in creating a repository. After running git init, adding and committing files/directories is possible.
 
-### `npm start`
+git add
+Adds files in the to the staging area for Git. Before a file is available to commit to a repository, the file needs to be added to the Git index (staging area). There are a few different ways to use git add, by adding entire directories, specific files, or all unstaged files.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+git commit
+Record the changes made to the files to a local repository. For easy reference, each commit has a unique ID.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+It’s best practice to include a message with each commit explaining the changes made in a commit. Adding a commit message helps to find a particular change or understanding the changes.
 
-### `npm test`
+git status
+This command returns the current state of the repository.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+git status will return the current working branch. If a file is in the staging area, but not committed, it shows with git status. Or, if there are no changes it’ll return nothing to commit, working directory clean.
 
-### `npm run build`
+git config
+With Git, there are many configurations and settings possible. git config is how to assign these settings. Two important settings are user user.name and user.email. These values set what email address and name commits will be from on a local computer. With git config, a --global flag is used to write the settings to all repositories on a computer. Without a --global flag settings will only apply to the current repository that you are currently in.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+There are many other variables available to edit in git config. From editing color outputs to changing the behavior of git status. Learn about git config settings in the official Git documentation.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+git branch
+To determine what branch the local repository is on, add a new branch, or delete a branch.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+git checkout
+To start working in a different branch, use git checkout to switch branches.
 
-### `npm run eject`
+git merge
+Integrate branches together. git merge combines the changes from one branch to another branch. For example, merge the changes made in a staging branch into the stable branch.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+git remote
+To connect a local repository with a remote repository. A remote repository can have a name set to avoid having to remember the URL of the repository.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+git clone
+To create a local working copy of an existing remote repository, use git clone to copy and download the repository to a computer. Cloning is the equivalent of git init when working with a remote repository. Git will create a directory locally with all files and repository history.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+git pull
+To get the latest version of a repository run git pull. This pulls the changes from the remote repository to the local computer.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+git push
+Sends local commits to the remote repository. git push requires two parameters: the remote repository and the branch that the push is for.
 
-## Learn More
+--------------------------------------------------------------------------------------------------------------------------------------------
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Advanced GIT commands.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+git stash
+To save changes made when they’re not in a state to commit them to a repository. This will store the work and give a clean working directory. For instance, when working on a new feature that’s not complete, but an urgent bug needs attention.
 
-### Code Splitting
+git log
+To show the chronological commit history for a repository. This helps give context and history for a repository. git log is available immediately on a recently cloned repository to see history.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+git rm
+Remove files or directories from the working index (staging area). With git rm, there are two options to keep in mind: force and cached. Running the command with force deletes the file. The cached command removes the file from the working index. When removing an entire directory, a recursive command is necessary.
 
-### Analyzing the Bundle Size
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Credit to beanstalkapp.com [Credit](http://guides.beanstalkapp.com/version-control/common-git-commands.html)
