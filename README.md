@@ -2,18 +2,18 @@ Just a sample app I'm working on with React [Create React App](https://github.co
 
 To upload with GIT.
 
-git init
+**git init**
 This command turns a directory into an empty Git repository. This is the first step in creating a repository. After running git init, adding and committing files/directories is possible.
 
-git add
+**git add**
 Adds files in the to the staging area for Git. Before a file is available to commit to a repository, the file needs to be added to the Git index (staging area). There are a few different ways to use git add, by adding entire directories, specific files, or all unstaged files.
 
-git commit
+**git commit**
 Record the changes made to the files to a local repository. For easy reference, each commit has a unique ID.
 
 It’s best practice to include a message with each commit explaining the changes made in a commit. Adding a commit message helps to find a particular change or understanding the changes.
 
-git status
+**git status**
 This command returns the current state of the repository.
 
 git status will return the current working branch. If a file is in the staging area, but not committed, it shows with git status. Or, if there are no changes it’ll return nothing to commit, working directory clean.
